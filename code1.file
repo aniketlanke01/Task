@@ -1,0 +1,11 @@
+import React from 'react';
+
+const TopAnnouncement = () => {
+ return (
+    <div className="top-announcement">
+      <h2>Get a free stuff when you sign up!</h2>
+    </div>
+ );
+};
+
+export default TopAnnouncement;

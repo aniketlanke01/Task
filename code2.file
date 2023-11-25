@@ -1,0 +1,17 @@
+import TopAnnouncement from '../components/TopAnnouncement';
+import Navbar from '../components/Navbar';
+import Banner from '../components/Banner';
+import SemiCircularSlideshow from '../components/SemiCircularSlideshow';
+
+const Home = () => {
+ return (
+    <div>
+      <TopAnnouncement />
+      <Navbar />
+      <Banner />
+      <SemiCircularSlideshow />
+    </div>
+ );
+};
+
+export default Home;
