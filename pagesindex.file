@@ -1,0 +1,15 @@
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import CarouselComponent from '../components/Carousel';
+
+const Home = () => {
+ return (
+    <div className="home">
+      <Header />
+      <CarouselComponent />
+      <Footer />
+    </div>
+ );
+};
+
+export default Home;

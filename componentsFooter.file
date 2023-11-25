@@ -1,0 +1,56 @@
+const Footer = () => {
+ return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-logo">
+          <Image src="/logo.png" alt="Bravaland Logo" width={120} height={32} />
+        </div>
+        <div className="footer-menu">
+          <ul>
+            <li>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/products">
+                <a>Products</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-social">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                <Image src="/icons/facebook.svg" alt="Facebook" width={24} height={24} />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+                <Image src="/icons/twitter.svg" alt="Twitter" width={24} height={24} />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+                <Image src="/icons/instagram.svg" alt="Instagram" width={24} height={24} />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+ );
+};
+
+export default Footer;

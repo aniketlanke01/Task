@@ -1,0 +1,64 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
+const Header = () => {
+ return (
+    <header className="header">
+      <nav className="navbar">
+        <Link href="/" passHref>
+          <a className="logo">
+            <Image src="/logo.png" alt="Bravaland Logo" width={120} height={32} />
+          </a>
+        </Link>
+        <ul className="nav-menu">
+          <li className="nav-item">
+            <Link href="/">
+              <a className="nav-link">Home</a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/products">
+              <a className="nav-link">Products</a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/blog">
+              <a className="nav-link">Blog</a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link href="/about">
+              <a className="nav-link">About</a>
+            </Link>
+          </li>
+        </ul>
+        <ul className="nav-menu nav-icons">
+          <li className="nav-item">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+              <Image src="/icons/facebook.svg" alt="Facebook" width={24} height={24} />
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+              <Image src="/icons/twitter.svg" alt="Twitter" width={24} height={24} />
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+              <Image src="/icons/instagram.svg" alt="Instagram" width={24} height={24} />
+            </a>
+          </li>
+          <li className="nav-item">
+            <Link href="/cart">
+              <a className="nav-link">
+                <Image src="/icons/cart.svg" alt="Cart" width={24} height={24} />
+              </a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+ );
+};
+
+export default Header;
